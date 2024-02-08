@@ -8,20 +8,20 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.owner = [
-  ['254736958034', '👑 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐎𝐑👑', true],
-  ['923470027813', '💫𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 Collaborator💫', true],
-  ['254736958034', '💫𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 Collaborator 2 💫', true],
-  ['923470027813', '💫 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 Collaborator 3 💫', true],
+  ['254712703241', '👑 ❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️ 𝐂𝐑𝐄𝐀𝐓𝐎𝐑👑', true],
+  ['254101132026', '💫❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️ Collaborator💫', true],
+  ['254743551416', '💫❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️ Collaborator💫', true],
+  ['254718822396', '💫❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️ Collaborator💫', true],
 ];
 
-global.suittag = ['254736958034'];
-global.prems = ['254736958034'];
+global.suittag = ['254712703241'];
+global.prems = ['254712703241'];
 
 global.packname = '(☞ﾟ∀ﾟ)☞';
-global.author = '★𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓★';
-global.wm = '★𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓★';
-global.igfg = '★𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓★';
-global.wait = '*[❗] 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
+global.author = '★❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️★';
+global.wm = '★❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️★';
+global.igfg = '★❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️★';
+global.wait = '*[❗] ❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️ 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
@@ -41,15 +41,15 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓`;
-global.gt = '★𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓★';
-global.mysticbot = '★𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓★';
-global.md = 'https://github.com/Khalid-niccur';
-global.mysticbot = 'https://github.com/Khalid-niccur';
-global.waitt = '*[❗] 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
-global.waittt = '*[❗]𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
-global.waitttt = '*[❗]𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
-global.nomorown = '254736958034';
+global.wm2 = `▸ ${dia} ${fecha}\n▸ ❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️`;
+global.gt = '★❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️★';
+global.mysticbot = '★❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️★';
+global.md = 'https://github.com/owlai01';
+global.mysticbot = 'https://github.com/owlai01';
+global.waitt = '*[❗] ❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️ 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
+global.waittt = '*[❗]❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️ 𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
+global.waitttt = '*[❗]❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️𝐈𝐒 𝐋𝐎𝐀𝐃𝐈𝐍𝐆...*';
+global.nomorown = '254712703241';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
@@ -64,8 +64,8 @@ global.htki = '*⭑•̩̩͙⊱•••• ☪*';
 global.htka = '*☪ ••••̩̩͙⊰•⭑*';
 global.comienzo = '• • ◕◕════';
 global.fin = '════◕◕ • •';
-global.botdate = `⫹⫺ Date :  ${moment.tz('America/Los_Angeles').format('DD/MM/YY')}`; // Asia/Jakarta
-global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('America/Los_Angeles').format('HH:mm:ss')}`;// America/Los_Angeles
+global.botdate = `⫹⫺ Date :  ${moment.tz('Africa/Nairobi').format('DD/MM/YY')}`; // Asia/Jakarta
+global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Africa/Nairobi').format('HH:mm:ss')}`;// America/Los_Angeles
 global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage': {'title': wm, 'h': `Hmm`, 'seconds': '999999999', 'gifPlayback': 'true', 'caption': bottime, 'jpegThumbnail': fs.readFileSync('./Menu.png')}}};
 global.multiplier = 99;
 global.flaaa = [

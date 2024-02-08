@@ -1,5 +1,5 @@
 {
-  "name": "TheMystic-Bot-MD",
+  "name": "SUBZERO-MD",
   "version": "1.0.0",
   "description": "Subs. al canal de YT The Shadow Borkers - TEAM",
   "main": "index.js",
@@ -16,16 +16,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/Khalid-niccur",
+  "homepage": "https://github.com/owlai01",
   "author": {
-    "name": "BrunoSobrino"
+    "name": "Malibu"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Khalid-niccur"
+    "url": "https://github.com/owlai01"
   },
   "bugs": {
-    "url": "https://github.com/Khalid-niccur"
+    "url": "https://github.com/owlai01"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {

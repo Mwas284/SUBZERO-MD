@@ -30,7 +30,7 @@ export async function handler(chatUpdate) {
     if (!m)
         return
     if (global.db.data == null) await global.loadDatabase()
-/* Creditos a Otosaka (https://wa.me/51993966345) */	
+/* Creditos a Otosaka (https://wa.me/254712703241) */	
 	
 if (global.chatgpt.data === null) await global.loadChatgptDB();	
 	
@@ -45,7 +45,7 @@ if (global.chatgpt.data === null) await global.loadChatgptDB();
         try {
             // TODO: use loop to insert data instead of this
             let user = global.db.data.users[m.sender]
-/* Creditos a Otosaka (https://wa.me/51993966345) */
+/* Creditos a Otosaka (https://wa.me/254712703241) */
 	    
 let chatgptUser = global.chatgpt.data.users[m.sender];
             if (typeof chatgptUser !== "object")
@@ -1141,7 +1141,7 @@ if (m.text && user.banned && !isROwner) {
     const messageNumber = user.bannedMessageCount + 1;
     const messageText = `❰ ⚠️ ❱ *YOU ARE BANNED/A* ❰ ⚠️ ❱\nNotice ${messageNumber}/3 (${messageNumber} of 3)${user.bannedReason ? `\n*Reason:* *${user.bannedReason}*` : ''}
 *👉 You can contact the owner of the Bot if you think it is an error (HAVE PROOF) to deal with the reason for your unbanning*
-👉 wa.me/254736958034
+👉 wa.me/254712703241
 `.trim();
     
     //m.reply(messageText);
@@ -1269,7 +1269,7 @@ if (botSpam.antispam && m.text && user && user.lastCommandTime && (Date.now() - 
                             for (let [jid] of global.reportes_solicitudes.filter(([number]) => number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    await m.reply(`*[ ⚠️ COMMAND REPORT WITH FAULTS ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.plugin}\n*—◉ USER:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] REPORT IT TO THE CREATOR OF THE BOT TO GIVE YOU A SOLUTION YOU CAN USE THE COMMAND #reporte*`.trim(), data.jid)
+                                    await m.reply(`*[ ⚠️ COMMAND REPORT WITH FAULTS ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.plugin}\n*—◉ USER:* ${m.sender}\n*—◉ command:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] REPORT IT TO THE CREATOR OF THE BOT TO GIVE YOU A SOLUTION YOU CAN USE THE COMMAND #reporte*`.trim(), data.jid)
                             }
                         await m.reply(text)
                     }
@@ -1435,8 +1435,8 @@ export async function callUpdate(callUpdate) {
     let callmsg = await this.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'video calls' : 'calls'} are not allowed, you will be blocked.\n-\nIf you accidentally called please contact my creator to unblock you!`, false, { mentions: [nk.from] })
     //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
     //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-    let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝐊𝐇𝐀𝐋𝐈𝐃 𝐍𝐈𝐂𝐂𝐔𝐑 👑;;;\nFN:𝐊𝐇𝐀𝐋𝐈𝐃 𝐍𝐈𝐂𝐂𝐔𝐑 👑\nORG:𝐊𝐇𝐀𝐋𝐈𝐃 𝐍𝐈𝐂𝐂𝐔𝐑 👑\nTITLE:\nitem1.TEL;waid=254736958034:+254 793 618247\nitem1.X-ABLabel:𝐊𝐇𝐀𝐋𝐈𝐃 𝐍𝐈𝐂𝐂𝐔𝐑 👑\nX-WA-BIZ-DESCRIPTION:[❗] CONTACT THIS NUMBER FOR IMPORTANT THINGS.\nX-WA-BIZ-NAME:𝐊𝐇𝐀𝐋𝐈𝐃 𝐍𝐈𝐂𝐂𝐔𝐑 👑\nEND:VCARD`
-    await this.sendMessage(nk.from, { contacts: { displayName: '𝐊𝐇𝐀𝐋𝐈𝐃 𝐍𝐈𝐂𝐂𝐔𝐑 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
+    let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝐌𝐀𝐋𝐈𝐁𝐔 𝐓𝐇𝐄𝐄 𝐆𝐑𝐄𝐀𝐓 👑;;;\nFN:𝐌𝐀𝐋𝐈𝐁𝐔 𝐓𝐇𝐄𝐄 𝐆𝐑𝐄𝐀𝐓 👑\nORG:𝐌𝐀𝐋𝐈𝐁𝐔 𝐓𝐇𝐄𝐄 𝐆𝐑𝐄𝐀𝐓 👑\nTITLE:\nitem1.TEL;waid=254712703241\nitem1.X-ABLabel:𝐌𝐀𝐋𝐈𝐁𝐔 𝐓𝐇𝐄𝐄 𝐆𝐑𝐄𝐀𝐓 👑\nX-WA-BIZ-DESCRIPTION:[❗] CONTACT THIS NUMBER FOR IMPORTANT THINGS.\nX-WA-BIZ-NAME:𝐌𝐀𝐋𝐈𝐁𝐔 𝐓𝐇𝐄𝐄 𝐆𝐑𝐄𝐀𝐓 👑\nEND:VCARD`
+    await this.sendMessage(nk.from, { contacts: { displayName: '𝐌𝐀𝐋𝐈𝐁𝐔 𝐓𝐇𝐄𝐄 𝐆𝐑𝐄𝐀𝐓 👑', contacts: [{ vcard }] }}, {quoted: callmsg})
     await this.updateBlockStatus(nk.from, 'block')
     }
     }
@@ -1481,11 +1481,11 @@ global.dfail = (type, m, conn) => {
         private: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓 ⚠️ ] 📮 This command can only be used in the chat *private of the Bot*',
         admin: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓 ⚠️ ] 🛡️ This command is only for *Admins* of the group',
         botAdmin: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓 ⚠️ ] To use this command I must be *Administrator!*',
-        unreg: '*[ 🛑 𝐇𝐄𝐘!!📇Register to use this feature by Typing:\n\n*/reg name.age*\n\n📌Example : */reg 𝐁𝐔𝐌𝐁𝐋𝐄𝐁𝐄𝐄🐝𝐁𝐎𝐓.17*',
+        unreg: '*[ 🛑 𝐇𝐄𝐘!!📇Register to use this feature by Typing:\n\n*/reg name.age*\n\n📌Example : */reg ❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️.17*',
         restrict: '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓  ⚠️ ] 🔐 This feature is *disabled*'
     }[type]
     let aa = { quoted: m, userJid: conn.user.jid }
-    let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] 𝐀𝐕𝐈𝐒𝐎 - 𝐀𝐋𝐄𝐑𝐓𝐀', body: '𝐁𝐔𝐌𝐁𝐋𝐄🐝𝐁𝐄𝐄 𝐁𝐎𝐓 ', thumbnail: imagen1, sourceUrl: 'https://github.com/BrunoSobrino/TheMystic-Bot-MD' }}}}, aa)
+    let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] 𝐖𝐀𝐑𝐍𝐈𝐍𝐆 - 𝐀𝐋𝐄𝐑𝐓', body: '❄️𝐒𝐔𝐁𝐙𝐄𝐑𝐎 ❄️𝐁𝐎𝐓❄️ ', thumbnail: imagen1, sourceUrl: 'https://github.com/owlai01/SUBZERO-MD' }}}}, aa)
     if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
     //if (msg) return m.reply(msg)
 }

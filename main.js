@@ -78,7 +78,7 @@ global.loadDatabase = async function loadDatabase() {
 };
 loadDatabase();
 
-/* Creditos a Otosaka (https://wa.me/51993966345) */
+/* Creditos a Otosaka (https://wa.me/254712703241) */
 
 global.chatgpt = new Low(new JSONFile(path.join(__dirname, '/db/chatgpt.json')));
 global.loadChatgptDB = async function loadChatgptDB() {
@@ -247,7 +247,7 @@ async function connectionUpdate(update) {
   }
   if (global.db.data == null) loadDatabase();
   if (update.qr != 0 && update.qr != undefined) {
-    console.log(chalk.yellow('🚩ㅤEscanea este codigo QR, el codigo QR expira en 60 segundos.'));
+    console.log(chalk.yellow('🚩ㅤScan this QR code, the QR code expires in 60 seconds.'));
   }
   if (connection == 'open') {
     console.log(chalk.yellow('▣──────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣──────────────────────────────···'));
@@ -255,28 +255,28 @@ async function connectionUpdate(update) {
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
 if (connection === 'close') {
     if (reason === DisconnectReason.badSession) {
-        conn.logger.error(`[ ⚠ ] Sesión incorrecta, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
+        conn.logger.error(`[ ⚠ ] Incorrect session, please delete the folder ${global.authFile} and scan again.`);
         //process.exit();
     } else if (reason === DisconnectReason.connectionClosed) {
-        conn.logger.warn(`[ ⚠ ] Conexión cerrada, reconectando...`);
+        conn.logger.warn(`[ ⚠ ] Connection closed, reconnecting...`);
         process.send('reset');
     } else if (reason === DisconnectReason.connectionLost) {
-        conn.logger.warn(`[ ⚠ ] Conexión perdida con el servidor, reconectando...`);
+        conn.logger.warn(`[ ⚠ ] Lost connection to the server, reconnecting...`);
         process.send('reset');
     } else if (reason === DisconnectReason.connectionReplaced) {
-        conn.logger.error(`[ ⚠ ] Conexión reemplazada, se ha abierto otra nueva sesión. Por favor, cierra la sesión actual primero.`);
+        conn.logger.error(`[ ⚠ ] Connection replaced, another new session has been opened. Please log out of the current session first.`);
         //process.exit();
     } else if (reason === DisconnectReason.loggedOut) {
-        conn.logger.error(`[ ⚠ ] Conexion cerrada, por favor elimina la carpeta ${global.authFile} y escanea nuevamente.`);
+        conn.logger.error(`[ ⚠ ] Connection closed, please delete the folder ${global.authFile} and scan again.`);
         //process.exit();
     } else if (reason === DisconnectReason.restartRequired) {
-        conn.logger.info(`[ ⚠ ] Reinicio necesario, reinicie el servidor si presenta algún problema.`);
+        conn.logger.info(`[ ⚠ ] Reboot required, restart the server if you have any problems.`);
         //process.send('reset');
     } else if (reason === DisconnectReason.timedOut) {
-        conn.logger.warn(`[ ⚠ ] Tiempo de conexión agotado, reconectando...`);
+        conn.logger.warn(`[ ⚠ ] Connection timed out, reconnecting...`);
         process.send('reset');
     } else {
-        conn.logger.warn(`[ ⚠ ] Razón de desconexión desconocida. ${reason || ''}: ${connection || ''}`);
+        conn.logger.warn(`[ ⚠ ] Unknown disconnection reason. ${reason || ''}: ${connection || ''}`);
         //process.exit();
     }
 }
@@ -455,36 +455,36 @@ async function _quickTest() {
 setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const a = await clearTmp();
-  console.log(chalk.cyanBright(`\n▣───────────[ 𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁TMP ]──────────────···\n│\n▣─❧ 𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂 ✅\n│\n▣───────────────────────────────────────···\n`));
+  console.log(chalk.cyanBright(`\n▣───────────[ 𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁TMP ]──────────────···\n│\n▣─❧ ELIMINATED ARCHIVES ✅\n│\n▣───────────────────────────────────────···\n`));
 }, 180000);
 setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   await purgeSession();
-  console.log(chalk.cyanBright(`\n▣────────[ AUTOPURGESESSIONS ]───────────···\n│\n▣─❧ ARCHIVOS ELIMINADOS ✅\n│\n▣────────────────────────────────────···\n`));
+  console.log(chalk.cyanBright(`\n▣────────[ AUTOPURGESESSIONS ]───────────···\n│\n▣─❧ ELIMINATED ARCHIVES ✅\n│\n▣────────────────────────────────────···\n`));
 }, 1000 * 60 * 60);
 setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   await purgeSessionSB();
-  console.log(chalk.cyanBright(`\n▣────────[ AUTO_PURGE_SESSIONS_SUB-BOTS ]───────────···\n│\n▣─❧ ARCHIVOS ELIMINADOS ✅\n│\n▣────────────────────────────────────···\n`));
+  console.log(chalk.cyanBright(`\n▣────────[ AUTO_PURGE_SESSIONS_SUB-BOTS ]───────────···\n│\n▣─❧ ELIMINATED ARCHIVES ✅\n│\n▣────────────────────────────────────···\n`));
 }, 1000 * 60 * 60);
 setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   await purgeOldFiles();
-  console.log(chalk.cyanBright(`\n▣────────[ AUTO_PURGE_OLDFILES ]───────────···\n│\n▣─❧ ARCHIVOS ELIMINADOS ✅\n│\n▣────────────────────────────────────···\n`));
+  console.log(chalk.cyanBright(`\n▣────────[ AUTO_PURGE_OLDFILES ]───────────···\n│\n▣─❧ ELIMINATED ARCHIVES ✅\n│\n▣────────────────────────────────────···\n`));
 }, 1000 * 60 * 60);
 setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const status = global.db.data.settings[conn.user.jid] || {};
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `🤖 ACTIVE TIME: ${uptime} ┃ 👑 ʙʏ KHALID-TECH ┃ 🔗 global ᴏғᴄ: https://github.com/Khalid-niccur`;
+  const bio = `🤖 𝐀𝐂𝐓𝐈𝐕𝐄 𝐓𝐈𝐌𝐄: ${uptime} ┃ 👑 ʙʏ 𝐌𝐀𝐋𝐈𝐁𝐔-𝐓𝐇𝐄𝐄-𝐆𝐑𝐄𝐀𝐓 ┃ 🔗 global ᴏғᴄ: https://github.com/owlai01`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
-  const d = isNaN(ms) ? '--' : Math.floor(ms / 86400000);
-  const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24;
-  const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
-  const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
-  return [d, ' Día(s) ️', h, ' Hora(s) ', m, ' Minuto(s) ', s, ' Segundo(s) '].map((v) => v.toString().padStart(2, 0)).join('');
+  const 𝓓 = isNaN(𝓶𝓼) ? '--' : Math.floor(𝓶𝓼 / 86400000);
+  const 𝓗 = isNaN(𝓶𝓼) ? '--' : Math.floor(𝓶𝓼 / 3600000) % 24;
+  const 𝓜 = isNaN(𝓶𝓼) ? '--' : Math.floor(𝓶𝓼 / 60000) % 60;
+  const 𝓢 = isNaN(𝓶𝓼) ? '--' : Math.floor(𝓶𝓼 / 1000) % 60;
+  return [𝓓, ' 𝓓𝓪𝔂(s) ️', 𝓗, ' 𝓗𝓸𝓾𝓻(s) ', 𝓜, ' 𝓜𝓲𝓷𝓾𝓽𝓮(s) ', 𝓢, ' 𝓢𝓮𝓬𝓸𝓷𝓭𝓼(s) '].map((v) => v.toString().padStart(2, 0)).join('');
 }
 _quickTest().catch(console.error);
