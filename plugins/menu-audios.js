@@ -20,14 +20,14 @@ let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
-║ ◉— *𝐓𝐇𝐄-𝐁𝐔𝐌𝐁𝐋𝐄🐝𝐁𝐎𝐓* —◉
+║ ◉— *𝐓𝐇𝐄-𝐒𝐔𝐁𝐙𝐄𝐑𝐎❄️𝐁𝐎𝐓❄️* —◉
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ║➤ *𝗛ola, ${taguser}*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
 
 ┏━━━━━━━━━━━━━━━━┓
-┃ *<🐝𝐌𝐄𝐍𝐔 𝐀𝐔𝐃𝐈𝐎🐝/>*
+┃ *<❄️𝐌𝐄𝐍𝐔 𝐀𝐔𝐃𝐈𝐎❄️/>*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣*- WRITE THE FOLLOWING WORDS OR PHRASES WITHOUT ANY
   PREFIX(#, /, *, .)*

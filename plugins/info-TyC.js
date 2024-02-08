@@ -48,8 +48,8 @@ _- If at any time you receive a message from the Bot number and it is not a comm
 *⁉️ Do you have any doubts?*
 _- If you still have any questions or complaints about what is mentioned here or regarding the Bot, contact me at my personal number to which I will be responding as soon as possible to provide you with a solution and/or hold me responsible for any complaint_
 
-> wa.me/254736958034
-> Bruno Nephew
-> Email: theshadowbrokers133@gmailcom
+> wa.me/254712703241
+> ᴍᴀʟɪʙᴜ
+> Email: ᴋɪᴅᴅᴏᴍᴀʟɪʙᴜ@ɢᴍᴀɪʟ.ᴄᴏᴍ
 
-*∆ 𝙱𝚄𝙼𝙱𝙻𝙴🐝𝙱𝙴𝙴 𝙱𝙾𝚃 ∆*`
+*∆ ❄️sᴜʙᴢᴇʀᴏ ʙᴏᴛ❄️ ∆*`

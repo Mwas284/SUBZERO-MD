@@ -8,9 +8,9 @@ let urlSC = await json2.hasil[0].url
 let res2 = await fetch(`https://api.akuari.my.id/downloader/scdl?link=${urlSC}`)
 let json = await res2.json()
 let shortUrl = await (await fetch(`https://tinyurl.com/api-create.php?url=${json.link}`)).text()
-let soundcloudt = `❒═══❬ 𝐒𝐎𝐔𝐍𝐃𝐂𝐋𝐎𝐔𝐃 ❭═══╾❒
+let soundcloudt = `❒═══❬ 𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐒𝐎𝐔𝐍𝐃 𝐂𝐋𝐎𝐔𝐃 ❭═══╾❒
 ┬
-├‣✨ *𝚃𝙸𝚃𝚄𝙻𝙾:* ${json.title}
+├‣✨ *𝐭𝐢𝐭𝐥𝐞:* ${json.title}
 ┴
 ┬
 ├‣💚 *𝚄𝚁𝙻 𝙳𝙸𝚁𝙴𝙲𝚃𝙾:* ${shortUrl}
@@ -19,7 +19,7 @@ let soundcloudt = `❒═══❬ 𝐒𝐎𝐔𝐍𝐃𝐂𝐋𝐎𝐔𝐃 ❭�
 ├‣ *- 𝙴𝚗𝚟𝚒𝚊𝚗𝚍𝚘 𝚖𝚞𝚜𝚒𝚌𝚊...*
 ┴
 ┬
-├ _﹫ᴛʜᴇ ᴍʏsᴛɪᴄ ﹣ ʙᴏᴛ_
+├ _﹫𝐬𝐮𝐛𝐳𝐞𝐫𝐨 𝐛𝐨𝐭_
 ┴`
 conn.sendFile(m.chat, json.thumb, '', soundcloudt, m)
 conn.sendMessage(m.chat, { audio: { url: json.link }, fileName: `error.mp3`, mimetype: 'audio/mp4' }, { quoted: m })  

@@ -19,7 +19,7 @@ let str = `*🔖𝐍𝐔𝐌𝐁𝐄𝐑 :* ${username} ${registered ? '(' + nam
 *🏆𝐋𝐈𝐌𝐈𝐓:* ${limit} APPLICATIONS
 *📇𝐑𝐄𝐆𝐈𝐒𝐓𝐄𝐑𝐄𝐃:* ${registered ? 'Yeah': 'No'}
 *⭐𝐏𝐑𝐄𝐌𝐈𝐔𝐌:* ${premiumTime > 0 ? 'Yeah' : (isPrems ? 'Yeah' : 'No') || ''}
-*🐝𝐒𝐄𝐑𝐈𝐀𝐋 𝐍𝐔𝐌𝐁𝐄𝐑 :* 
+*❄️𝐒𝐄𝐑𝐈𝐀𝐋 𝐍𝐔𝐌𝐁𝐄𝐑 :* 
 ${sn}`
 conn.sendMessage(m.chat, { image: { url: pp }, caption: str }, { quoted: m })
 //conn.sendButton(m.chat, str, author, pp, [['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']], m)

@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 const regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
 let handler = async (m, { args, usedPrefix, command }) => {
-if (!args[0]) throw `*[❗𝐈𝐍𝐅𝐎❗] PUT A GIRHUB REPO LINK, EXAMPLE: ${usedPrefix + command} https://github.com/Khalid-niccur/DYLUX-BOT*`
+if (!args[0]) throw `*[❗𝐈𝐍𝐅𝐎❗] PUT A GIRHUB REPO LINK, EXAMPLE: ${usedPrefix + command} https://github.com/owlai01/SUBZERO-MD*`
 if (!regex.test(args[0])) throw '*[❗𝐈𝐍𝐅𝐎❗]LINK INCORRECT!*'
 let [_, user, repo] = args[0].match(regex) || []
 repo = repo.replace(/.git$/, '')

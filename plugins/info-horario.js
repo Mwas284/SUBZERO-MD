@@ -20,7 +20,7 @@ const fechapar = moment().tz('America/Asuncion').format('DD/MM HH:mm')
 const fechanew = moment().tz('America/New_York').format('DD/MM HH:mm')
 const fechaasi = moment().tz('Asia/Jakarta').format('DD/MM HH:mm')
 const fechabra = moment().tz('America/Sao_Paulo').format('DD/MM HH:mm')
-const fechaafri = moment().tz('Africa/Malabo').format('DD/MM HH:mm')
+const fechaafri = moment().tz('Africa/Nairobi').format('DD/MM HH:mm')
 await conn.sendMessage(m.chat, { text: `\`\`\`
 「 ZONA-HORARIA ⏰ 」
 ⏱️Peru       : ${fechaper}

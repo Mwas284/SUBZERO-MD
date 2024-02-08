@@ -443,7 +443,7 @@ m.reply('*[❗] ʀᴇᴀʟɪᴢᴀɴᴅᴏ ᴅɪsᴇɴ̃ᴏ, ᴀɢᴜᴀʀᴅᴇ
 let img = await q.download?.()
 let url = await uploadImage(img)
 let images = `https://violetics.pw/api/photomaker/${encodeURIComponent(text)}?apikey=beta&image=${encodeURIComponent(url)}`
-let caption = `*⎔┉━「 𝐏𝐇𝐌𝐀𝐊𝐄𝐑 」━┉⎔*
+let caption = `*⎔┉━「 𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐏𝐇𝐌𝐀𝐊𝐄𝐑 」━┉⎔*
 *💟 𝙴𝙵𝙴𝙲𝚃𝙾:* ${text}`
 conn.sendButton(m.chat, caption, wm, images, [['💫 𝙼𝙰𝚂 𝙾𝙿𝙲𝙸𝙾𝙽𝙴𝚂 💫', `${usedPrefix}phmakerlist`]], m)
 }

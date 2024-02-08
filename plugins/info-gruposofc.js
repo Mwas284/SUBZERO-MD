@@ -3,14 +3,14 @@ var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.present
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `
 *➤ 𝐛𝐨𝐭 𝐥𝐢𝐧𝐤𝐬:*
-*1.-* https://twitter.com/Khalid_niccur
+*1.-* https://t.me/+cBmC5dzy78Y2YzA0
 
-*2.-* https://github.com/Khalid-niccur
+*2.-* https://github.com/owlai01
 
-*3.-* https://t.co/3frSXMbUH2
+*3.-* https://t.me/theetechpalace
 `.trim()   
 let buttonMessage= {
-'document': { url: `https://github.com/Khalid-niccur` },
+'document': { url: `https://github.com/owlai01` },
 'mimetype': `application/${document}`,
 'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
 'fileLength': 99999999999999,
@@ -19,13 +19,13 @@ let buttonMessage= {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com/Khalid-niccur',
+'mediaUrl': 'https://github.com/owlai01',
 'mediaType': 2,
 'previewType': 'pdf',
-'title': '𝑻𝒓𝒂𝒏𝒔𝒇𝒐𝒓𝒎𝒆𝒓𝒔 𝒂𝒓𝒊𝒔𝒆 𝒂𝒏𝒅 𝒔𝒉𝒊𝒏𝒆⁩',
+'title': '𝖒𝖔𝖙𝖆𝖑𝖐𝖔𝖒𝖇𝖆𝖈𝖙⁩',
 'body': wm,
 'thumbnail': imagen1,
-'sourceUrl': 'https://t.co/3frSXMbUH2' }},
+'sourceUrl': 'https://t.me/+cBmC5dzy78Y2YzA0' }},
 'caption': text,
 'footer': wm,
 //'buttons':[

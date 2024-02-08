@@ -42,7 +42,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
    let speed = neww - old
   
 let infobt = `
-≡ *BUMBLEBEE BOT INFO*
+≡ *SUBZERO BOT INFO*
   *STATE*
 ▢ *${groupsIn.length}* Group Chats
 ▢ *${groupsIn.length}* United groups
@@ -51,24 +51,24 @@ let infobt = `
 ▢ *${chats.length}* Total Chats
 
 *≡ OWNER*
-   KHALID-TECHNOLOGIES
+   MALIBU THEE GREAT
 ▢Instagram :
-   •https://www.instagram.com/khalid_niccur/
+   •https://www.instagram.com/_m.a.l.i.b.u__/
 ▢ WhatsApp :
    • (DM ONLY WHEN NECESSARY)
 ▢ GitHub :
-   • https://github.com/Khalid-niccur/DYLUX-BOT
+   • https://github.com/owlai01/SUBZERO-MD
 ▢ Telegram :
-   • https://t.me/dextrousmodsKENYA
+   • https://t.me/+cBmC5dzy78Y2YzA0
  
   *≡ HELPERS* *CRISS*
-▢ Instagram : https://www.instagram.com/khalid_niccur
-▢ WhatsApp : wa.me/254114098508
-   khalid+TECHNOLOGY 
-▢ WhatsApp : wa.me/254736958034
+▢ Instagram : https://www.instagram.com/_m.a.l.i.b.u__
+▢ WhatsApp : wa.me/254712703241
+   MALIBU THEE GREAT 
+▢ WhatsApp : wa.me/254712703241
 
   *≡ S E R V E R*
-*🛑RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
+*🛑RAM BY TESLA:* ${format(totalmem() - freemem())} / ${format(totalmem())}
 *🔵FreeRAM:* ${format(freemem())}
 
 *≡ NodeJS Memory Usage*

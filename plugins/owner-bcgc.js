@@ -6,7 +6,7 @@ let handler = async(m, { conn, text }) => {
    let cc = conn.serializeM(text ? m : m.quoted ? await m.getQuotedObj() : false || m)
    let teks = text ? text : cc.text
    conn.reply(m.chat, `✅🤍 Transmission made *Total:* ${chats.length} chats`, m)
-   for (let id of chats) await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast|tx/i.test(teks) ? teks : `*🐝BROADCAST ┃BUMBLE🐝*\n_____________________\n ${teks} ` ), true).catch(_ => _)
+   for (let id of chats) await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast|tx/i.test(teks) ? teks : `*❄️BROADCAST ┃SUBZERO❄️*\n_____________________\n ${teks} ` ), true).catch(_ => _)
    m.reply('✅💘 Broadcast to all chats 💌:)')
 }
 handler.help = ['tx']

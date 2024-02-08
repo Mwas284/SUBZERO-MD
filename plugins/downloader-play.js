@@ -5,7 +5,7 @@ import axios from 'axios';
 import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
 import {bestFormat, getUrlDl} from '../lib/y2dl.js';
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] ERROR IN THE NAME OF THE SONG, PLEASE DIGITAL NAME/AUTHOR*\n\n*—◉ EXAMPLE:*\n*${usedPrefix + command} ED-SHERAN shivers*`;
+  if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] ERROR IN THE NAME OF THE SONG, PLEASE DIGITAL NAME/AUTHOR*\n\n*—◉ EXAMPLE:*\n*${usedPrefix + command} Banana vybz kartel*`;
   try {
     const yt_play = await search(args.join(' '));
     let additionalText = '';
@@ -14,7 +14,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play2') {
       additionalText = 'video 🎥';
     }
-    const texto1 = `*◉—⌈🔊🎶BEE MUSIC🎶🔊⌋—◉*\n
+    const texto1 = `*◉—⌈🔊🎶𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐏𝐋𝐀𝐘𝐄𝐑🎶🔊⌋—◉*\n
 ❏ 📌 *TITLE:* ${yt_play[0].title}
 ❏ 📆 *PUBLISHED:* ${yt_play[0].ago}
 ❏ ⌚ *DURATION:* ${secondString(yt_play[0].duration.seconds)}

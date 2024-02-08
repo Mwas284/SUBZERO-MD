@@ -3,7 +3,7 @@ import {getTracks} from '@green-code/music-track-data';
 import {googleImage} from '@bochilteam/scraper';
 const handler = async (m, {conn, text, usedPrefix, command}) => {
   const teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : '';
-  if (!teks) throw `*[❗𝐈𝐍𝐅𝐎❗] Example correct use of command: ${usedPrefix + command} shivers by Ed Sheeran*`;
+  if (!teks) throw `*[❗𝐈𝐍𝐅𝐎❗] Example correct use of command: ${usedPrefix + command} banana by Vybz Kartel*`;
   try {
     const result = await getTracks(teks);
     const lyrics = await find_lyrics(`${result[0].artist} ${result[0].title}`);

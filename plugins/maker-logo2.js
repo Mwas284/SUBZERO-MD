@@ -1,6 +1,6 @@
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
-	let tee = `✳️ Enter a short text\n\n📌 Example  : *${usedPrefix + command}* DYLUX`
-	let too = `✳️ Separate the text with a *+* \n\n📌 Example : \n*${usedPrefix + command}* DYLUX*+* BOT`
+	let tee = `✳️ Enter a short text\n\n📌 Example  : *${usedPrefix + command}* SUBZERO`
+	let too = `✳️ Separate the text with a *+* \n\n📌 Example : \n*${usedPrefix + command}* SUBZERO*+* BOT`
 	
 	m.react(rwait);
 	

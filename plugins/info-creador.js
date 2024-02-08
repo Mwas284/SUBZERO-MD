@@ -1,9 +1,9 @@
 let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let text = `*—◉ 𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁  wa.me/254736958034*
+let text = `*—◉ 𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁  wa.me/254712703241*
 
-*—◉ 𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁  wa.me/254114098508*`.trim()   
+*—◉ 𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁  wa.me/254712703241*`.trim()   
 let buttonMessage= {
 'document': { url: `https://github.com/Khalid-niccur` },
 'mimetype': `application/${document}`,
@@ -17,10 +17,10 @@ let buttonMessage= {
 'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
 'mediaType': 2,
 'previewType': 'pdf',
-'title':   '  𝖙𝖗𝖆𝖓𝖘𝖋𝖔𝖗𝖒𝖊𝖗𝖘 𝖗𝖎𝖘𝖊⁩',
+'title':   '  𝖒𝖔𝖙𝖆𝖑 𝖐𝖔𝖒𝖕𝖆𝖈𝖙⁩',
 'body': wm,
 'thumbnail': imagen1,
-'sourceUrl': 'https://github.com/Khalid-niccur' }},
+'sourceUrl': 'https://github.com/owlai01' }},
 'caption': text,
 'footer': wm,
 //'buttons':[

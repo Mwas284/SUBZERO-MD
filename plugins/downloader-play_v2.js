@@ -6,7 +6,7 @@ let handler = async (m, {command, conn, text}) => {
 if (!text) throw `[❗𝐈𝐍𝐅𝐎❗] 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽 𝙵𝙰𝙻𝚃𝙰𝙽𝚃𝙴, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙼𝙰𝚂 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴/𝚃𝙸𝚃𝚄𝙻𝙾 𝙾 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴 𝙰𝙻𝙶𝚄𝙽𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽 𝙾 𝚅𝙸𝙳𝙴𝙾 𝙳𝙴 𝚈𝙾𝚄𝚃𝚄𝙱𝙴\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:\n#play.1 Good Feeling - Flo Rida*`
 try {
 if (command == 'play.1') {
-conn.reply(m.chat, `*_⏳𝐁𝐔𝐌𝐁𝐋𝐄🐝𝐁𝐄𝐄 𝐁𝐎𝐓 𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐀𝐔𝐃𝐈𝐎 ...⏳_*`, m) 
+conn.reply(m.chat, `*_⏳𝐒𝐔𝐁𝐙𝐄𝐑𝐎❄️🥶 𝐁𝐎𝐓 𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐀𝐔𝐃𝐈𝐎 ...⏳_*`, m) 
 try {  
 let res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)    
 let json = await res.json()
@@ -17,10 +17,10 @@ let mediaa = await ytPlay(text)
 let audiocore = mediaa.result2[0].audio || mediaa.result2[1].audio || mediaa.result2[2].audio || mediaa.result2
 conn.sendMessage(m.chat, { audio: { url: audiocore }, fileName: `error.mp3`, mimetype: 'audio/mp4' }, { quoted: m })}}
 if (command == 'play.2') {
-conn.reply(m.chat, `*_⏳𝐁𝐔𝐌𝐁𝐋𝐄🐝𝐁𝐄𝐄 𝐁𝐎𝐓 𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐕𝐈𝐃𝐄𝐎...⏳_*`, m)    
+conn.reply(m.chat, `*_⏳𝐒𝐔𝐁𝐙𝐄𝐑𝐎❄️🥶 𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐕𝐈𝐃𝐄𝐎...⏳_*`, m)    
 try {   
 let mediaa = await ytPlayVid(text)
-await conn.sendMessage(m.chat, { video: { url: mediaa.result }, fileName: `error.mp4`, caption: `_𝑮𝑬𝑵𝑬𝑹𝑨𝑻𝑬𝑫 𝑩𝒀 𝑩𝑼𝑴𝑩𝑳𝑬🐝𝑩𝑬𝑬 𝑩𝑶𝑻_`, thumbnail: mediaa.thumb, mimetype: 'video/mp4' }, { quoted: m })   
+await conn.sendMessage(m.chat, { video: { url: mediaa.result }, fileName: `error.mp4`, caption: `_𝑮𝑬𝑵𝑬𝑹𝑨𝑻𝑬𝑫 𝑩𝒀 𝐒𝐔𝐁𝐙𝐄𝐑𝐎❄️🥶 𝑩𝑶𝑻_`, thumbnail: mediaa.thumb, mimetype: 'video/mp4' }, { quoted: m })   
 } catch {
 let res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)    
 let json = await res.json()
